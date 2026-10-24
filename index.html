@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Kiệt Học Chip - Hành trình học Digital IC Design của Trần Huỳnh Anh Kiệt. Ghi lại, chia sẻ và nhìn lại." />
+  <meta name="theme-color" content="#09131f" />
+  <title>Kiệt Học Chip | Digital IC Design Student</title>
+  <style>
+    :root { --bg:#09131f; --panel:#111f2f; --panel-2:#16283a; --line:#273c4a; --ink:#f1f8fb; --muted:#a7bcc9; --mint:#72e4ce; --blue:#89bfff; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif; color:var(--ink); background:radial-gradient(ellipse at 80% 0%,#123b44 0%, transparent 45%),var(--bg); line-height:1.65; }
+    a { color:inherit; }
+    .wrap { max-width:980px; margin:auto; padding:0 24px; }
+    header { border-bottom:1px solid var(--line); background:#09131fcf; }
+    nav { display:flex; justify-content:space-between; align-items:center; min-height:72px; gap:20px; }
+    .brand { font-weight:800; text-decoration:none; letter-spacing:-.02em; font-size:1.1rem; }
+    .brand span { color:var(--mint); }
+    .links { display:flex; gap:20px; font-size:.9rem; }
+    .links a { text-decoration:none; color:var(--muted); }
+    .links a:hover { color:var(--mint); }
+    .hero { padding:90px 0 65px; }
+    .eyebrow { color:var(--mint); font-size:.82rem; font-weight:800; letter-spacing:.15em; }
+    h1 { font-size:clamp(2.7rem,7vw,5.3rem); letter-spacing:-.06em; line-height:1.08; margin:18px 0 20px; }
+    h1 em { color:var(--mint); font-style:normal; }
+    .lead { font-size:1.12rem; color:var(--muted); max-width:640px; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
+    .button { display:inline-block; padding:11px 20px; font-weight:700; border-radius:11px; text-decoration:none; border:1px solid var(--line); }
+    .button.primary { background:var(--mint); color:#082126; border-color:var(--mint); }
+    .button.secondary { background:var(--panel); }
+    section { padding:34px 0 45px; }
+    .label { color:var(--mint); font-size:.82rem; font-weight:800; text-transform:uppercase; letter-spacing:.14em; }
+    h2 { margin:8px 0 12px; font-size:1.75rem; letter-spacing:-.035em; }
+    .section-intro { color:var(--muted); margin-top:0; }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin-top:22px; }
+    .card { background:linear-gradient(160deg,var(--panel-2),var(--panel)); border:1px solid var(--line); border-radius:18px; padding:22px; min-height:196px; }
+    .card .tag { display:inline-block; font-size:.72rem; color:var(--mint); border:1px solid #2b756f; padding:3px 9px; border-radius:999px; }
+    .card h3 { margin:13px 0 6px; font-size:1.08rem; }
+    .card p { color:var(--muted); font-size:.94rem; margin:0; }
+    .panel { border:1px solid var(--line); border-radius:18px; background:var(--panel); padding:24px; }
+    .panel p { color:var(--muted); margin:0; }
+    .contact { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+    footer { border-top:1px solid var(--line); text-align:center; color:var(--muted); padding:24px; font-size:.86rem; margin-top:35px; }
+    :focus-visible { outline:3px solid var(--blue); outline-offset:4px; }
+    @media(max-width:700px){ .hero{padding:65px 0 42px;} .grid{grid-template-columns:1fr;} .links{gap:12px;} .links a{font-size:.82rem;} .card{min-height:0;} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav aria-label="Điều hướng chính">
+        <a class="brand" href="#home">⚡ Kiệt <span>Học Chip</span></a>
+        <div class="links">
+          <a href="#about">Giới thiệu</a>
+          <a href="#projects">Dự án</a>
+          <a href="#contact">Liên hệ</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap" id="home">
+    <div class="hero">
+      <div class="eyebrow">DIGITAL IC DESIGN STUDENT · YEAR 3</div>
+      <h1>Xin chào,<br />mình là <em>Kiệt.</em></h1>
+      <p class="lead">Đây là một góc nhỏ để mình <strong>ghi lại, chia sẻ và nhìn lại</strong> hành trình học thiết kế vi mạch: từ logic, RTL đến verification, từng bước một.</p>
+      <p style="color:var(--mint);font-weight:800">One Day or Day One. 🚀</p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/kiettha" target="_blank" rel="noopener noreferrer">Xem GitHub ↗</a>
+        <a class="button secondary" href="#projects">Khám phá dự định học ↓</a>
+      </div>
+    </div>
+    <section id="about">
+      <span class="label">01 / About</span>
+      <h2>Ghi lại · Chia sẻ · Nhìn lại</h2>
+      <div class="panel">
+        <p>Mình là <strong>Trần Huỳnh Anh Kiệt</strong>, sinh viên năm 3 ngành Thiết kế vi mạch. Mình muốn lưu lại cả quá trình học, những lần chưa hiểu, lúc debug sai và cảm giác khi một thiết kế cuối cùng hoạt động đúng. Đây là hành trình học tập thực tế, không phải lời giới thiệu rằng mình đã thành chuyên gia.</p>
+      </div>
+    </section>
+    <section id="projects">
+      <span class="label">02 / Projects</span>
+      <h2>Các project trong kế hoạch</h2>
+      <p class="section-intro">Những ý tưởng dự định thực hiện. Khi hoàn thành, mình sẽ cập nhật link source code, testbench và waveform.</p>
+      <div class="grid">
+        <article class="card"><span class="tag">Dự định</span><h3>MUX 2:1</h3><p>RTL Verilog · Testbench cơ bản · Đối chiếu bảng chân trị.</p></article>
+        <article class="card"><span class="tag">Dự định</span><h3>4-bit Counter</h3><p>Sequential logic · Clock/Reset · Waveform & debug.</p></article>
+        <article class="card"><span class="tag">Dự định</span><h3>Traffic Light FSM</h3><p>FSM · State transition · Tự động kiểm tra kết quả.</p></article>
+      </div>
+    </section>
+    <section id="contact">
+      <span class="label">03 / Contact</span>
+      <h2>Kết nối với Kiệt</h2>
+      <div class="panel">
+        <p>Mình muốn kết nối với những bạn cùng học Digital IC Design, Verilog, RTL và Verification.</p>
+        <div class="contact">
+          <a class="button primary" href="https://github.com/kiettha" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <!-- Cập nhật email và TikTok khi Kiệt muốn công khai: <a class="button secondary" href="mailto:email-cua-ban">Email</a> -->
+        </div>
+        <p style="margin-top:14px;font-size:.88rem">Email/TikTok: sẽ cập nhật sau.</p>
+      </div>
+    </section>
+  </main>
+  <footer>© Kiệt Học Chip · Learn · Design · Verify · Reflect</footer>
+</body>
+</html>
